@@ -41,7 +41,7 @@ URL_schema = URLSchema()
 URLs_schema = URLSchema(many=True)
 
 def key():
-    return secrets.token_urlsafe(20)
+    return secrets.token_urlsafe(10)
 
 @app.route('/')
 def index():
