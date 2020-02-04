@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>URL shortenerator</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Your shortened URL</h1>
+    <a href={{url}}>localhost:5000/{{url}}</a>
+</div>
+{% endblock %}
